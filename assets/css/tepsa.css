@@ -1,0 +1,16 @@
+.filter.filter-color-tepsa:before {
+  /*background: #c6cacd*/
+  background:hsla(0, 0%, 56%, 0.7411764705882353);
+}
+
+
+.separator-tepsa {
+  color: #e80e0e;
+}
+.separator-tepsa:before, .separator-tepsa:after {
+  border-color: #e80e0e;
+}
+
+.text-tepsa {
+  color: #e80e0e !important;
+}
