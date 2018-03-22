@@ -32,7 +32,7 @@
                     <span class="icon-bar bar3"></span>
                 </button>
                 <a href="http://www.tepsa.com.mx" class="navbar-brand">
-                    <img src="assets/img/logos/tepsa_logo_90px.png">
+                    <img src="assets/img/logos/small_white_logo.png">
                 </a>
             </div>
             <div class="collapse navbar-collapse">
@@ -74,10 +74,11 @@
             <div class="container">
                 <div class="content">
                     <div class="title-area">
-                        <img src="assets/img/logos/tepsa_logo_350px.png" alt="Logotipo TEPSA - Transporte Ejecutivo de Personal">
-                        <p style="display:none">Transporte Ejecutivo de Personal</p>
+                        <!-- <img src="assets/img/logos/tepsa_logo_350px.png" alt="Logotipo TEPSA - Transporte Ejecutivo de Personal"> -->
+                        <h2>TRANSPORTE EJECUTIVO DE PERSONAL</h2>
+                        <!-- <p style="display:none">Transporte Ejecutivo de Personal</p> -->
                         <!-- <h1 class="title-modern">TEPSA</h1>-->
-                        <h3>¡El transporte que deseas para tu trabajador!</h2>
+                        <h4>¡El transporte que deseas para tu trabajador!</h4>
                         <div class="separator line-separator">	&#8226;</div>
                     </div>
 
@@ -361,6 +362,7 @@
                         <nav>
                             <ul>
                                 <li>
+                                    <p>Llamanos al:</p><a href="tel:8666323449">8666323449</a>
                                     <a href="#">Ir arriba</a>
                                 </li>
    
@@ -456,5 +458,19 @@
 
 <!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
 <script type="text/javascript" src="assets/js/gaia.js"></script>
+<script>
+    $(window).scroll(function() {
+        if ($(".navbar").offset().top > 50) {
+            $('#custom-nav').addClass('affix');
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+            $('.navbar-brand img').attr('src','assets/img/logos/small_black_logo.png'); //change src
+        } else {
+            $('#custom-nav').removeClass('affix');
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+            $('.navbar-brand img').attr('src','assets/img/logos/small_white_logo.png')
+        }   
+    });
+
+</script>
 
 </html>
